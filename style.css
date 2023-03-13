@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@100;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Noto Serif Lao', serif; */
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    z-index: 44;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    background: none;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/* Real styling website */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    z-index: 50;
+    align-items: center;
+    background: none;
+    gap: 4rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.navbar-nav a {
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    color: #EF4743;
+}
+
+#mainContainerParent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+    z-index: -11;
+}
+
+#mainContainerParent .left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstHeading {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.secondHeading {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.thirdHeading {
+    font-weight: 800;
+    font-size: 70px;
+    color: #567aff;
+}
+.simpelPlainText {
+    text-align: justify;
+    line-height: 30px;
+}
+.call {
+    text-decoration: none;
+    transition: 0.4s ease;
+    color: #567aff;
+    border: 1px solid #567aff;
+    text-align: center;
+    background: #fff;
+    z-index: 90;
+    width: 185px;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.call:hover {
+    background: #567aff;
+    color: white;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img {
+    height: 100%;
+    width: 80%;
+}
